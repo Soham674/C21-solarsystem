@@ -1,9 +1,18 @@
+var earth,earthimg;
+
+function preload() {
+earthimg = loadImage("solarimage/Earth.jpg");
+}
+
 function setup() {
-  createCanvas(800,400);
-  createSprite(400, 200, 50, 50);
+  createCanvas(1200,800);
+  earth = createSprite(400, 200, 50, 50);
+  earth.addImage(earthimg);
+  earth.scale = 0.2;
 }
 
 function draw() {
-  background(255,255,255);  
+  background(0);  
   drawSprites();
+  text(mouseX + ',' + mouseY, 10, 15);
 }
