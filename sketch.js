@@ -1,4 +1,7 @@
+var mercury,mercuryimg;
+var venus,venusimg;
 var earth,earthimg;
+var mars,marsimg;
 
 function preload() {
 earthimg = loadImage("solarimage/Earth.jpg");
