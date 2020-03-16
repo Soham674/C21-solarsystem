@@ -5,6 +5,7 @@ var mars,marsimg;
 var jupiter,jupiterimg;
 var saturn,saturnimg;
 var uranus,uranusimg;
+var neptune,neptuneimg;
 
 function preload() {
 earthimg = loadImage("solarimage/Earth.jpg");
@@ -14,10 +15,11 @@ marsimg = loadImage("solarimage/Mars.jpg");
 jupiterimg = loadImage("solarimage/Jupiter.jpg");
 saturnimg = loadImage("solarimage/Saturn.jpg");
 uranusimg = loadImage("solarimage/Uranus.jpg");
+neptuneimg = loadImage("solarimage/Neptune.jpg");
 }
 
 function setup() {
-  createCanvas(1300,800);
+  createCanvas(1400,800);
   earth = createSprite(437, 286, 50, 50);
   earth.addImage(earthimg);
   earth.scale = 0.2;
@@ -45,6 +47,10 @@ function setup() {
   uranus = createSprite(1169,654,48,48);
   uranus.addImage(uranusimg);
   uranus.scale = 0.2;
+
+  neptune = createSprite(1300,742,46,46);
+  neptune.addImage(neptuneimg);
+  neptune.scale = 0.1;
 }
 
 function draw() {
